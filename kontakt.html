@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Formularz kontaktowy | WLiSS</title>
+        <meta name="description" content="Strona internetowej firmy która wypożcza luksusowe i sportowe samochody, a także daje możliwość udostępnienia prywatnym osobom swoich prestiżowych samochodów">
+        <meta name="keywords" content="wypożyczalnia, samochody, samochody luksusowe, samochody sportowe, samochody prestiżowe, luksusowe, sportowe, prestiżowe">
+        <meta name="viewport" content="width=device-width, initial scale=1.0, maximum-scale=1">
+        <meta name="author" content="Krystian Będuch">
+        <meta name="generator" content="Brackets">
+        <meta name="robots" content="all">
+        <link rel="stylesheet" href="reset.css"> <!-- reset css -->
+        <link rel="stylesheet" href="main.css"> <!-- odwołanie do głównego pliku css -->
+        <link rel="stylesheet" href=respon.css> <!-- odwołanie do pliku konfiguracyjnego style responsywne -->
+        <!-- favi dla różnego typu urządzeń -->
+        <link rel="apple-touch-icon" sizes="57x57" href="favi/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favi/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favi/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favi/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favi/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favi/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favi/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favi/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favi/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favi/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+        <link rel="manifest" href="favi/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favi/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">    
+        <style>
+            section{
+                text-align: center;
+                margin-top: 10%;
+            }
+            section > p{
+                margin: 3%;
+                font-size: 1.3em;
+                color: #96671C;
+                text-align: justify;
+            }
+            label{
+                font-size: 1.5em;
+                color:#DB9E3D;
+            }
+            input, textarea{
+                font-size: 1em;
+                border: 1px solid #DB9E3D;
+                margin: 10px 0;
+                color: #DB9E3D;
+            }
+            textarea{
+                margin-top: 1%;
+                color: gray;
+                height: 150px;
+                width: 75%;
+            }
+            input:focus{
+                border: 3px solid #D79428;
+                outline: none;
+                color: #fff;
+                background-color: #D79428;
+            }
+            textarea:focus{
+                border: 3px solid #D79428;
+                outline: none;
+            }
+            input[type="submit"]{
+                font-size: 1.5em;
+                padding: 5px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover{
+                padding: 5px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                background: #AC7620;
+                color: white;
+            }            
+            input::placeholder{
+                visibility: hidden;
+            }
+            input:focus::placeholder{
+                background-color: #D79428;
+                visibility: visible;
+            }
+            /* RESPON */
+            @media (max-width: 800px){
+                section{
+                    font-size: 1em;
+                }
+                section > p{
+                    text-align: left;
+                }
+        </style>
+    </head>
+    <body>
+        <div id="center">
+            <header>
+                <h1><span>W</span>ypożyczalnia <span>L</span>uksusowych i <span>S</span>portowych <span>S</span>amochodów</h1>
+                <a href="index.html"><img class="wliss" src="logo-removebg-preview.png" alt="logo"></a>
+            </header>
+            <nav>
+                <h2>Formularz kontaktowy</h2>
+                <ul id="menu">
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="share.html">Udostępnienie samochodu</a></li>
+                    <li><a href="kontakt.html#">Formularz kontaktowy</a></li>
+                </ul>
+            </nav>
+            <section>
+                <p>Jeśli chcesz się z nami skontaktować należy wypełnić poniższy formularz. W celu uniknięcia botów oraz spamu prosimy o podanie imienia oraz nazwiska a także e-maila poprzez którego będziemy się dalej kontaktować. Możesz również podać numer telefonu poprzez który będziemy się mogli z Tobą skontaktować. Abyśmy mogli się lepiej orientować prosimy także podanie miejsca zamieszkania</p>
+                <hr color="#AC7620" size="3">
+                <form method="post" action="">
+                    <label>Imię i nazwisko<br><input type="text" name="dane" placeholder="Imię i nazwisko" required="required"></label><br>
+                    <label>Adres e-mail<br><input type="text" name="email" placeholder="Adres e-mail" required="required"></label><br>
+                    <label>Miejsce zamieszkania<br><input type="text" name="miejsce" placeholder="Miejsce zamieszkania" required="required"></label><br>
+                    <label>Numer telefonu*<br><input type="tel" name="telefon" placeholder="Numer telefonu" pattern="^[0-9]{9}$"></label><br>
+                    <label>Treść wiadomości<br><textarea name="tresc" placeholder="Wpisz wiadomość..." required="required"></textarea></label><br>
+                    <input type="submit" name="wyslij" value="Wyślij">
+                </form>
+            </section>
+            <footer>
+                <p>© May 2021 by Krystian Będuch</p>
+            </footer>
+        </div>
+    </body>
+</html>

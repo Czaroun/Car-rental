@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Udostępnienie samochodu | WLiSS</title>
+        <meta name="description" content="Strona internetowej firmy która wypożcza luksusowe i sportowe samochody, a także daje możliwość udostępnienia prywatnym osobom swoich prestiżowych samochodów">
+        <meta name="keywords" content="wypożyczalnia, samochody, samochody luksusowe, samochody sportowe, samochody prestiżowe, luksusowe, sportowe, prestiżowe">
+        <meta name="viewport" content="width=device-width, initial scale=1.0, maximum-scale=1">
+        <meta name="author" content="Krystian Będuch">
+        <meta name="generator" content="Brackets">
+        <meta name="robots" content="all">
+        <link rel="stylesheet" href="reset.css"> <!-- reset css -->
+        <link rel="stylesheet" href="main.css"> <!-- odwołanie do głównego pliku css -->
+        <link rel="stylesheet" href=respon.css> <!-- odwołanie do pliku konfiguracyjnego style responsywne -->
+        <!-- favi dla różnego typu urządzeń -->
+        <link rel="apple-touch-icon" sizes="57x57" href="favi/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favi/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favi/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favi/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favi/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favi/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favi/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favi/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favi/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favi/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+        <link rel="manifest" href="favi/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favi/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">    
+        <style>
+            section{
+                text-align: center;
+                margin-top: 10%;
+            }
+            section > p{
+                margin: 3%;
+                font-size: 1.3em;
+                color: #96671C;
+                text-align: justify;
+            }
+            label{
+                font-size: 1.5em;
+                color:#DB9E3D;                              
+                display: inline;
+                position: absolute;
+                left: 25%;                
+                float: left;
+                width: 15%;
+                text-align: left;
+                margin: 1%;
+            }
+            input, textarea, select{
+                font-size: 1.5em;
+                border: 1px solid #DB9E3D;
+                margin: 1%;
+                color: #DB9E3D;
+                position: relative;
+            }
+            textarea{
+                margin-top: 1%;
+                color: gray;
+                height: 150px;
+                width: 75%;
+            }
+            input:focus{
+                border: 3px solid #D79428;
+                outline: none;
+                color: #fff;
+                background-color: #D79428;
+            }
+            textarea:focus{
+                border: 3px solid #D79428;
+                outline: none;
+            }
+            input[type="submit"]{
+                font-size: 1.5em;
+                padding: 5px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover{
+                padding: 5px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                background: #AC7620;
+                color: white;
+            }
+            input::placeholder{
+                visibility: hidden;
+            }
+            input:focus::placeholder{
+                background-color: #D79428;
+                visibility: visible;
+            }            
+            /* RESPON */
+            @media only screen and (max-width: 1500px){
+                label{
+                    font-size: 150%;
+                    display: block;
+                    float: none;
+                    position: static;
+                    text-align: center;
+                    width: 100%;
+                }
+                label{
+                    display: block;
+                    float: none;
+                }
+                input{
+                    text-align: center;
+                    margin: 0;                  
+                }
+                input, textarea, select{
+                    font-size: 150%;
+                }
+            }
+            @media (max-width: 800px){
+                section{
+                    font-size: 1em;
+                }
+                section > p{
+                    text-align: left;
+                }
+            
+        </style>
+    </head>
+    <body>
+        <div id="center">
+            <header>
+                <h1><span>W</span>ypożyczalnia <span>L</span>uksusowych i <span>S</span>portowych <span>S</span>amochodów</h1>
+                <a href="index.html"><img class="wliss" src="logo-removebg-preview.png" alt="logo"></a>
+            </header>
+            <nav>
+                <h2>Udostępnienie samochodu</h2>
+                <ul id="menu">
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="share.html">Udostępnienie samochodu</a></li>
+                    <li><a href="kontakt.html#">Formularz kontaktowy</a></li>
+                </ul>
+            </nav>
+            <section>
+                <p>Jeśli posiadasz prestiżowy samochód i chciałbyś, aby inny poczuli tą samą przyjemność z jazdy co Ty, możesz udostępnić nam swój samochód. Firma płaci kaucje o wysokości 5000zł. Wypełnij poniższy formularz informacyjny dotyczący Twojego samochodu. W ciągu 2 dni roboczych skontaktujemy się z Tobą</p>
+                <hr color="#AC7620" size="3">
+                <form method="post" action="">
+                    <label>Imię i nazwisko </label><input type="text" name="dane" placeholder="Imię i nazwisko" required="required"><br>
+                    <label>Adres e-mail </label><input type="text" name="email" placeholder="Adres e-mail" required="required"><br>
+                    <label>Miejsce zamieszkania </label><input type="text" name="miejsce" placeholder="Miejsce zamieszkania" required="required"><br>
+                    <label>Numer telefonu </label><input type="tel" name="telefon" placeholder="Numer telefonu" pattern="^[0-9]{9}$" required="required"><br>
+                    <label>Marka pojazdu </label><input type="text" name="marka" placeholder="Marka" required="required"><br>
+                    <label>Model pojazdu </label><input type="text" name="model" placeholder="Model" required="required"><br>
+                    <label>Rok produkcji </label><input type="number" name="rokpr" placeholder="Rok" required="required" pattern="^[1,2]{1}[0-9]{3}$"><br>
+                    <label>Przebieg </label><input type="text" name="przebieg" placeholder="W zaokrąleniu do 1000km" required="required"><br>
+                    <label>Pojemność skokowa silnika </label><input type="text" name="pojemsil" placeholder="Pojemność silnika" required="required"><br>
+                    <select name="skrzynia" required="required">
+                        <option value="">-------Skrzynia biegów------</option>
+                        <option value="automat">Automatyczna</option>
+                        <option value="manual">Manualna</option>
+                    </select><br>
+                    <select name="paliwo" required="required">
+                        <option value="">--------Rodzaj paliwa--------</option>
+                        <option value="benzyna">Benzyna</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="inne">Inne</option>
+                    </select><br>
+                    <textarea name="tresc" placeholder="Jeśli chcesz nam coś jeszcze przekazać napisz to tutaj"></textarea><br>
+                    <input type="submit" name="wyslij" value="Wyślij">
+                </form>
+            </section>
+            <footer>
+                <p>© May 2021 by Krystian Będuch</p>
+            </footer>
+        </div>
+    </body>
+</html>

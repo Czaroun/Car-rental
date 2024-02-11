@@ -1,0 +1,103 @@
+/* OGÓLNE */
+html{
+    width: 100%;
+    height: 100%;
+}
+/* + */
+body{
+    font-family: Georgia, Cambria, Arial;
+    background-color: #ffffd0;
+}
+/* -ZAPASOWE-    background-color: ;#0027c2;
+                background-color: #fef1aa; */                   
+#center{
+    margin: 0 auto;
+    padding: 0 auto;
+    z-index: -10;
+    background-color: #fffff0;
+    width: 90%;
+    height: 100%;
+    max-width: 1800px;
+    box-sizing: border-box;
+}
+/* -ZAPASOWE- background-color: #ccc;*/
+/* HEADER */
+header{
+    margin-bottom: 10%;
+}
+header > h1{
+    font-family: DejaVu Sans;
+    font-size: 3em;
+    font-weight: 600;
+    color: purple;
+    background: -webkit-linear-gradient( #e200e2, #1e001e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+/* -INNE USTAWIENIA-
+            #logo > h1{          
+                font-family: Source Code Pro;
+                font-weight: bold;
+                font-size: 3em;                
+                text-align: center;
+                color: blueviolet;            
+                color: rgb(94,38,135);
+                background: -webkit-linear-gradient( rgb(93,38,135), black); */            
+span{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.wliss{
+    position: relative;
+    left: 10%;
+    height: 20%;
+    width: 20%;
+}
+/* MENU */
+nav{
+    margin-bottom: 10%;
+    font-weight: 600;
+    text-align: center;
+}
+nav > h2{
+    font-size: 3em;
+    color: #D79428;
+    font-weight: bolder;
+}
+#menu{
+    margin: 0 auto;
+    padding: 0 auto;
+    list-style: none;
+    width: 100%;
+}
+#menu > li{
+    float: left;
+    width: 25%;
+}
+#menu > li > a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #bebebe;
+    color: #000;
+    padding: 30px;
+    padding: 8.25%;
+    font-size: 1.3em;
+}
+#menu > li:hover > a{
+    color: white;
+    border-style: inset;
+    background-color: #D79428;
+}
+/* FOOTER */
+footer{
+    position: relative;
+    top: 100%;
+    background-color: black;
+    padding: 7px;
+}
+footer > p{
+    color: white;
+    text-align: center;
+}
