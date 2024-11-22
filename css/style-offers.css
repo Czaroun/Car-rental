@@ -1,7 +1,3 @@
-:root {
-    --input-color: #db9E3d;
-}
-
 section {
     text-align: center;
     margin-top: 10%;
@@ -10,7 +6,7 @@ section {
 section h3 {
     margin: 3%;
     font-size: 300%;
-    color: #96671C;
+    color: #96671c;
 }
 
 section a img {
@@ -57,7 +53,7 @@ caption {
 
 input {
     font-size: 1.3em;
-    border: 1px solid var(--input-color);
+    border: 1px solid var(--text-color);
     margin: 5px 0 50px 0;
     padding: 5px 30px;
     color: var(--input-color);
@@ -74,6 +70,6 @@ input:hover {
 }
 
 input:focus {
-    border: 3px solid var(--input-color);
+    border: 3px solid var(--text-color);
     outline: none;
 }

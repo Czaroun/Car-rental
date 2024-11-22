@@ -7,9 +7,10 @@ html {
 :root {
     --body-bg-colro: #ffffd0;
     --main-bg-color: #fffff0;
-    --secondary-bg-color: #d79428;
-    --text-color: #000;
+    --text-color: #d79428;
     --highlight-color: purple;
+    --text-primary: #96671c;
+    --text-secondary: #db9e3d;
 }
 
 body {
@@ -37,8 +38,8 @@ header h1 {
     font-family: DejaVu Sans, serif;
     font-size: 3em;
     font-weight: 600;
-    color: var(--highlight-color);
-    background: -webkit-linear-gradient(#e200e2, #1e001e);
+    color: var(--text-color);
+    background: -webkit-linear-gradient(#d79428, #ac7620);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -65,24 +66,19 @@ nav {
 
 nav h2 {
     font-size: 3em;
-    color: var(--secondary-bg-color);
+    color: var(--text-color);
     font-weight: bolder;
     margin-bottom: 20px;
 }
 
 #menu {
-    /*margin: 0 auto;*/
-    /*padding: 0;*/
     list-style: none;
     display: flex;
     justify-content: space-around;
-    /*width: 100%;*/
 }
 
 #menu li {
-    /*float: left;*/
     width: 25%;
-    /*width: auto;*/
 }
 
 #menu li a {
@@ -92,7 +88,7 @@ nav h2 {
     text-decoration: none;
     text-align: center;
     background-color: #bebebe;
-    color: var(--text-color);
+    color: black;
     padding: 30px;
     font-size: 1.3em;
     min-height: 6vh;
@@ -102,6 +98,13 @@ nav h2 {
     color: white;
     border-style: inset;
     background-color: #D79428;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #ac7620;
+    margin: 20px auto;
 }
 
 /* FOOTER */

@@ -7,18 +7,11 @@ section {
 }
 
 section figure {
-    /*position: relative;*/
-    /*left: 0;*/
-    /*width: 500%;*/
-    /*animation: 30s slider infinite;*/
-    border-top: 3px solid #D79428;
-    border-bottom: 3px solid #D79428;
+    border-top: 3px solid var(--text-color);
+    border-bottom: 3px solid var(--text-color);
     display: flex;
     position: relative;
     width: 500%;
-    /*width: calc(100% * 20); !* 10 zdjęć x 2 (oryginały + duplikaty) *!*/
-
-    /*transform: translateX(0);*/
     margin: 0;
     padding: 0;
     left: 0;

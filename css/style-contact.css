@@ -1,9 +1,3 @@
-:root {
-    --text-primary: #96671c;
-    --text-secondary: #db9e3d;
-    --input-color: #d79428;
-}
-
 section {
     text-align: center;
     margin-top: 10%;
@@ -36,14 +30,14 @@ textarea {
 }
 
 input:focus {
-    border: 3px solid var(--input-color);
+    border: 3px solid var(--text-color);
     outline: none;
     color: #fff;
-    background-color: var(--input-color);
+    background-color: var(--text-color);
 }
 
 textarea:focus {
-    border: 3px solid var(--input-color);
+    border: 3px solid var(--text-color);
     outline: none;
 }
 
@@ -67,7 +61,7 @@ input::placeholder {
 }
 
 input:focus::placeholder {
-    background-color: var(--input-color);
+    background-color: var(--text-color);
     visibility: visible;
 }
 
