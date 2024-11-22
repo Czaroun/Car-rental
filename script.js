@@ -13,6 +13,7 @@ const adjustLinks = () => {
 
     portfolioLinks.forEach(link => {
        if (isLocal) {
+           // Jeśli lokalnie (plik file://), ustawiamy linki na pelny adres
            link.href = "https://krystianbeduch.github.io/";
        }
     });
