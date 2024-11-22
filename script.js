@@ -55,7 +55,7 @@ const adjustLinks = () => {
     if (figureSlider) {
         for (let i = 0; i < 10; i++) {
             const random = Math.floor(Math.random() * images.length);
-            const pathToFile = "oferta/car_photos/" + images[random] + ".jpg";
+            const pathToFile = "offers/car_photos/" + images[random] + ".jpg";
             console.log(pathToFile);
             images.pop();
             const img = document.createElement("img");
