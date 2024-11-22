@@ -26,8 +26,8 @@ section figure {
 }
 
 section figure img {
-    /*width: calc(100% / 10);*/
-    width: 192px;
+    width: calc(100% / 10);
+    /*width: 192px;*/
     /*width: calc(100% / 10 + 0.5%);*/
     /*width: 100vw;*/
     /*height: 9.8%;*/
