@@ -1,27 +1,40 @@
 @media (max-width: 800px) {
-    #center {
+    main {
         max-width: 800px;
     }
 
-    header > h1 {
+    header h1 {
         font-size: 2em;
     }
 
-    #menu > li {
-        float: none;
-        display: inline;
+    #menu {
+        display: block;
+        text-align: left;
+        padding: 0;
+        margin: 0;
     }
 
-    #menu > li > a {
+    #menu li {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    #menu li a {
         font-size: 1.1em;
         padding: 3%;
     }
 
-    nav > h2 {
+    nav h2 {
         font-size: 2em;
     }
 
-    section > a > h3 > img {
+    section {
+        font-size: 0.8em;
+    }
+
+    section a h3 img {
         height: 50%;
         width: 50%;
     }
@@ -34,7 +47,7 @@
 }
 
 @media (max-width: 400px) {
-    section > a > img {
+    section a img {
         height: 50%;
         width: 50%;
     }

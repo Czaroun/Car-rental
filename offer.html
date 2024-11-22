@@ -2,18 +2,21 @@
 <html lang="pl">
     <head>
         <meta charset="utf-8">
-        <title>Udostępnienie samochodu | WLiSS</title>
+        <title>Oferta | WLiSS</title>
         <meta name="description" content="Strona internetowej firmy która wypożcza luksusowe i sportowe samochody, a także daje możliwość udostępnienia prywatnym osobom swoich prestiżowych samochodów">
         <meta name="keywords" content="wypożyczalnia, samochody, samochody luksusowe, samochody sportowe, samochody prestiżowe, luksusowe, sportowe, prestiżowe">
         <meta name="viewport" content="width=device-width, initial scale=1.0, maximum-scale=1">
         <meta name="author" content="Krystian Będuch">
         <meta name="generator" content="Brackets">
         <meta name="robots" content="all">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/style-share.css">
+
 <!--        <link rel="stylesheet" href="css/reset.css"> &lt;!&ndash; reset css &ndash;&gt;-->
 <!--        <link rel="stylesheet" href="css/style.css"> &lt;!&ndash; odwołanie do głównego pliku css &ndash;&gt;-->
 <!--        <link rel="stylesheet" href=css/style-respon.css> &lt;!&ndash; odwołanie do pliku konfiguracyjnego style responsywne &ndash;&gt;-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style-offer.css">
+<!--        <link rel="stylesheet" href="css/style-offers.css">-->
+
         <!-- favicon dla różnego typu urządzeń -->
         <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -33,7 +36,48 @@
         <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">    
         <style>
+            /*:root {*/
+            /*    --text-primary: #96671c;*/
+            /*}*/
 
+            /*section {*/
+            /*    text-align: center;*/
+            /*    margin-top: 10%;*/
+            /*}*/
+
+            /*section p {*/
+            /*    margin: 3%;*/
+            /*    font-size: 1.3em;*/
+            /*    color: var(--text-primary);*/
+            /*    text-align: justify;*/
+            /*}*/
+
+            /*section a {*/
+            /*    text-decoration: none;*/
+            /*}*/
+
+            /*section a h3 {*/
+            /*    margin: 3%;*/
+            /*    font-size: 300%;*/
+            /*    color: var(--text-secondary);*/
+            /*}*/
+
+            /*section a h3 img {*/
+            /*    height: 15%;*/
+            /*    width: 15%;*/
+            /*}*/
+
+            /*!* RESPON *!*/
+            /*@media (max-width: 800px) {*/
+            /*    section {*/
+            /*        font-size: 0.8em;*/
+            /*    }*/
+
+            /*    section a h3 img {*/
+            /*        height: 25%;*/
+            /*        width: 25%;*/
+            /*    }*/
+            /*}*/
         </style>
 
         <script src="script.js"></script>
@@ -45,7 +89,7 @@
                 <a href="../car-rental/" class="home-link"><img class="wliss" src="logo-removebg-preview.png" alt="logo"></a>
             </header>
             <nav>
-                <h2>Udostępnienie samochodu</h2>
+                <h2>Oferta</h2>
                 <ul id="menu">
                     <li><a href="../car-rental/" class="home-link">Strona Główna</a></li>
                     <li><a href="offer.html">Oferta</a></li>
@@ -54,32 +98,23 @@
                 </ul>
             </nav>
             <section>
-                <p>Jeśli posiadasz prestiżowy samochód i chciałbyś, aby inny poczuli tą samą przyjemność z jazdy co Ty, możesz udostępnić nam swój samochód. Firma płaci kaucje o wysokości 5000zł. Wypełnij poniższy formularz informacyjny dotyczący Twojego samochodu. W ciągu 2 dni roboczych skontaktujemy się z Tobą</p>
-                <hr color="#AC7620" size="3">
-                <form method="post" action="">
-                    <label>Imię i nazwisko </label><input type="text" name="dane" placeholder="Imię i nazwisko" required="required"><br>
-                    <label>Adres e-mail </label><input type="text" name="email" placeholder="Adres e-mail" required="required"><br>
-                    <label>Miejsce zamieszkania </label><input type="text" name="miejsce" placeholder="Miejsce zamieszkania" required="required"><br>
-                    <label>Numer telefonu </label><input type="tel" name="telefon" placeholder="Numer telefonu" pattern="^[0-9]{9}$" required="required"><br>
-                    <label>Marka pojazdu </label><input type="text" name="marka" placeholder="Marka" required="required"><br>
-                    <label>Model pojazdu </label><input type="text" name="model" placeholder="Model" required="required"><br>
-                    <label>Rok produkcji </label><input type="number" name="rokpr" placeholder="Rok" required="required" pattern="^[1,2]{1}[0-9]{3}$"><br>
-                    <label>Przebieg </label><input type="text" name="przebieg" placeholder="W zaokrąleniu do 1000km" required="required"><br>
-                    <label>Pojemność skokowa silnika </label><input type="text" name="pojemsil" placeholder="Pojemność silnika" required="required"><br>
-                    <select name="skrzynia" required="required">
-                        <option value="">-------Skrzynia biegów------</option>
-                        <option value="automat">Automatyczna</option>
-                        <option value="manual">Manualna</option>
-                    </select><br>
-                    <select name="paliwo" required="required">
-                        <option value="">--------Rodzaj paliwa--------</option>
-                        <option value="benzyna">Benzyna</option>
-                        <option value="diesel">Diesel</option>
-                        <option value="inne">Inne</option>
-                    </select><br>
-                    <textarea name="tresc" placeholder="Jeśli chcesz nam coś jeszcze przekazać napisz to tutaj"></textarea><br>
-                    <input type="submit" name="wyslij" value="Wyślij">
-                </form>
+                <a href="oferta/audi.html"><h3><img src="oferta/logo/audi_logo.png" alt="Audi"><br>Audi (3)</h3></a>
+                <a href="oferta/bentley_continental.html"><h3><img src="oferta/logo/bentley_logo.png" alt="Bentley"><br>Bentley (1)</h3></a>
+                <a href="oferta/bmw.html"><h3><img src="oferta/logo/bmw_logo.png" alt="BMW"><br>BMW (4)</h3></a>
+                <a href="oferta/chevrolet.html"><h3><img src="oferta/logo/chevrolet_logo.png" alt="Chevrolet"><br>Chevrolet (2)</h3></a>
+                <a href="oferta/ferrari_488_spider.html"><h3><img src="oferta/logo/ferrari_logo.png" alt="Ferrari"><br>Ferrari (1)</h3></a>
+                <a href="oferta/fiat_tipo.html"><h3><img src="oferta/logo/fiat_logo.png" alt="Fiat"><br>Fiat (1)</h3></a>
+                <a href="oferta/ford_mustang.html"><h3><img src="oferta/logo/ford_logo.png" alt="Ford"><br>Ford (1)</h3></a>
+                <a href="oferta/jaguar_xf.html"><h3><img src="oferta/logo/jaguar_logo.png" alt="Jaguar"><br>Jaguar (1)</h3></a>
+                <a href="oferta/lamborghini.html"><h3><img src="oferta/logo/lamborghin_logo.png" alt="Lamborghini"><br>Lamborghini (2)</h3></a>
+                <a href="oferta/lexus_lc.html"><h3><img src="oferta/logo/lexus_logo.png" alt="Lexus"><br>Lexus (1)</h3></a>
+                <a href="oferta/maserati_levante.html"><h3><img src="oferta/logo/maserati_logo.png" alt="Maserati"><br>Maserati (1)</h3></a>
+                <a href="oferta/maybach_klasa_s.html"><h3><img src="oferta/logo/maybach_logo.png" alt="Maybach"><br>Maybach (1)</h3></a>
+                <a href="oferta/mercedes.html"><h3><img src="oferta/logo/mercedes_logo.png" alt="Mercedes-Benz"><br>Mercedes-Benz (5)</h3></a>
+                <a href="oferta/nissan_leaf.html"><h3><img src="oferta/logo/nissan_logo.png" alt="Nissan"><br>Nissan (1)</h3></a>
+                <a href="oferta/rolls_royce.html"><h3><img src="oferta/logo/rolls_royce_logo.png" alt="Rolls Royce"><br>Rolls Royce (3)</h3></a>
+                <a href="oferta/tesla_model_x.html"><h3><img src="oferta/logo/tesla_logo.png" alt="Tesla"><br>Tesla (1)</h3></a>
+                <a href="oferta/volvo_xc90.html"><h3><img src="oferta/logo/volvo_logo.png" alt="Volvo"><br>Volvo (1)</h3></a>
             </section>
             <footer>
                 <p>

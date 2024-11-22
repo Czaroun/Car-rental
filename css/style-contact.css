@@ -1,0 +1,83 @@
+:root {
+    --text-primary: #96671c;
+    --text-secondary: #db9e3d;
+    --input-color: #d79428;
+}
+
+section {
+    text-align: center;
+    margin-top: 10%;
+}
+
+section p {
+    margin: 3%;
+    font-size: 1.3em;
+    color: var(--text-primary);
+    text-align: justify;
+}
+
+label {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+}
+
+input, textarea {
+    font-size: 1em;
+    border: 1px solid var(--text-secondary);
+    margin: 10px 0;
+    color: var(--text-secondary);
+}
+
+textarea {
+    margin-top: 1%;
+    color: gray;
+    height: 150px;
+    width: 75%;
+}
+
+input:focus {
+    border: 3px solid var(--input-color);
+    outline: none;
+    color: #fff;
+    background-color: var(--input-color);
+}
+
+textarea:focus {
+    border: 3px solid var(--input-color);
+    outline: none;
+}
+
+input[type="submit"] {
+    font-size: 1.5em;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #AC7620;
+    color: white;
+}
+
+input::placeholder {
+    visibility: hidden;
+}
+
+input:focus::placeholder {
+    background-color: var(--input-color);
+    visibility: visible;
+}
+
+/* RESPON */
+@media (max-width: 800px) {
+    section {
+        font-size: 1em;
+    }
+
+    section p {
+        text-align: left;
+    }
+}

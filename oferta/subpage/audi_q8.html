@@ -9,10 +9,10 @@
         <meta name="author" content="Krystian Będuch">
         <meta name="generator" content="Brackets">
         <meta name="robots" content="all">
-        <link rel="stylesheet" href="../../css/reset.css"> <!-- reset css -->
-        <link rel="stylesheet" href="../../css/style.css"> <!-- odwołanie do głównego pliku css -->
-        <link rel="stylesheet" href="../../css/oferty.css"> <!-- odwołanie do pliku styli dla ofert aut -->
-        <link rel="stylesheet" href="../../css/respon.css"> <!-- odwołanie do pliku konfiguracyjnego style responsywne -->
+
+        <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" href="../../css/style-offers.css">
+
         <!-- favicon dla różnego typu urządzeń -->
         <link rel="apple-touch-icon" sizes="57x57" href="../../favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="../../favicon/apple-icon-60x60.png">
@@ -29,21 +29,13 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
         <link rel="manifest" href="../../favicon/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="../../favi/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">    
-        <style>
-            /* RESPON */
-            @media (max-width: 800px){
-                section{
-                    font-size: 0.8em;
-                }              
-            }
-        </style>
+        <meta name="msapplication-TileImage" content="../../favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
 
         <script src="script.js"></script>
     </head>
     <body>
-        <div id="center">
+        <main>
             <header>
                 <h1><span>W</span>ypożyczalnia <span>L</span>uksusowych i <span>S</span>portowych <span>S</span>amochodów</h1>
                 <a href="../../" class="home-link"><img class="wliss" src="../../logo-removebg-preview.png" alt="logo"></a>
@@ -52,33 +44,33 @@
                 <h2>Oferta</h2>
                 <ul id="menu">
                     <li><a href="../../" class="home-link">Strona Główna</a></li>
-                    <li><a href="../../oferta.html">Oferta</a></li>
+                    <li><a href="../../offer.html">Oferta</a></li>
                     <li><a href="../../share.html">Udostępnienie samochodu</a></li>
-                    <li><a href="../../kontakt.html">Formularz kontaktowy</a></li>
+                    <li><a href="../../contact.html">Formularz kontaktowy</a></li>
                 </ul>
             </nav>
             <section>
-                <h3>Mercedes Klasa A</h3>
-                <a href="../zdjecia_aut/mercedes_klasa_a.jpg" target="_blank"><img src="../zdjecia_aut/mercedes_klasa_a.jpg" alt="mercedes_klasa_a"></a>
+                <h3>Audi Q8</h3>
+                <a href="../car_photos/audi_q8.jpg" target="_blank"><img src="../car_photos/audi_q8.jpg" alt="audi_q8"></a>
                 <table>
                     <caption>Dane techniczne:</caption>
-                    <tr><th>Marka</th><td>Mercedes-Benz</td></tr>
-                    <tr><th>Model</th><td>Klasa A</td></tr>
-                    <tr><th>Moc</th><td>224 KM</td></tr>
-                    <tr><th>Pojemność silnika</th><td>2.0</td></tr>
-                    <tr><th>Rok produkcji</th><td>2023</td></tr>
-                    <tr><th>Rodzaj paliwa</th><td>Benzyna</td></tr>
-                    <tr><th>Skrzynia biegów</th><td>Automatyczna</td></tr>
+                    <tr><th>Marka</th><td>Audi</td></tr>
+                    <tr><th>Model</th><td>Q8</td></tr>
+                    <tr><th>Moc</th><td>286 KM</td></tr>
+                    <tr><th>Pojemność silnika</th><td>3.0 V6 TDI</td></tr>
+                    <tr><th>Rok produkcji</th><td>2020</td></tr>
+                    <tr><th>Rodzaj paliwa</th><td>Diesel</td></tr>
+                    <tr><th>Skrzynia biegów</th><td>Automatyczna 8-biegowa</td></tr>
                     <tr><th>Typ napędu</th><td>4x4</td></tr>
                 </table>                 
                 <table class="cennik">
                     <caption>Cennik:</caption>
-                    <tr><th>1 dzień</th><td>500 PLN</td></tr>
-                    <tr><th>2 dni</th><td>950 PLN</td></tr>
-                    <tr><th>5 dni</th><td>2200 PLN</td></tr>
-                    <tr><th>14 dni</th><td>5500 PLN</td></tr>
-                    <tr><th>30 dni</th><td>10 000 PLN</td></tr>
-                    <tr><th>+kaucja</th><td>12 000 PLN</td></tr>
+                    <tr><th>1 dzień</th><td>600 PLN</td></tr>
+                    <tr><th>2 dni</th><td>1100 PLN</td></tr>
+                    <tr><th>5 dni</th><td>2500 PLN</td></tr>
+                    <tr><th>14 dni</th><td>6300 PLN</td></tr>
+                    <tr><th>30 dni</th><td>13 500 PLN</td></tr>
+                    <tr><th>+kaucja</th><td>28 000 PLN</td></tr>
                 </table>
                 <form method="post" action="">
                     <input type="submit" value="Zamów auto">
@@ -91,6 +83,6 @@
                     Ostatnia aktualizacja: Listopad 2024
                 </p>
             </footer>
-        </div>
+        </main>
     </body>
 </html>

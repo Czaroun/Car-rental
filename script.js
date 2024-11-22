@@ -52,18 +52,22 @@ const adjustLinks = () => {
         "volvo_xc90"
     ];
 
-    // let randomImages = [];
-    for (let i = 0; i < 10; i++) {
-        const random = Math.floor(Math.random() * images.length);
-        const pathToFile = "oferta/zdjecia_aut/" + images[random] + ".jpg";
-        console.log(pathToFile);
-        images.pop();
-        const img = document.createElement("img");
-        img.src = pathToFile;
-        img.alt = images[random];
-        figureSlider.appendChild(img);
-        console.log("test");
+    if (figureSlider) {
+        for (let i = 0; i < 10; i++) {
+            const random = Math.floor(Math.random() * images.length);
+            const pathToFile = "oferta/car_photos/" + images[random] + ".jpg";
+            console.log(pathToFile);
+            images.pop();
+            const img = document.createElement("img");
+            img.src = pathToFile;
+            img.alt = images[random];
+            figureSlider.appendChild(img);
+            console.log("test");
+        }
     }
+
+    // let randomImages = [];
+
 
 
 

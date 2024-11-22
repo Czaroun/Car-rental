@@ -1,0 +1,42 @@
+:root {
+    --text-primary: #96671c;
+}
+
+section {
+    text-align: center;
+    margin-top: 10%;
+}
+
+section p {
+    margin: 3%;
+    font-size: 1.3em;
+    color: var(--text-primary);
+    text-align: justify;
+}
+
+section a {
+    text-decoration: none;
+}
+
+section a h3 {
+    margin: 3%;
+    font-size: 300%;
+    color: var(--text-primary);
+}
+
+section a h3 img {
+    height: 15%;
+    width: 15%;
+}
+
+/* RESPON */
+@media (max-width: 800px) {
+    section {
+        font-size: 0.8em;
+    }
+
+    section a h3 img {
+        height: 25%;
+        width: 25%;
+    }
+}

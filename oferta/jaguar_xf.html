@@ -9,10 +9,10 @@
         <meta name="author" content="Krystian Będuch">
         <meta name="generator" content="Brackets">
         <meta name="robots" content="all">
-        <link rel="stylesheet" href="../css/reset.css"> <!-- reset css -->
-        <link rel="stylesheet" href="../css/style.css"> <!-- odwołanie do głównego pliku css -->
-        <link rel="stylesheet" href="../css/oferty.css"> <!-- odwołanie do pliku styli dla ofert aut -->
-        <link rel="stylesheet" href="../css/respon.css"> <!-- odwołanie do pliku konfiguracyjnego style responsywne -->
+
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/style-offers.css">
+
         <!-- favicon dla różnego typu urządzeń -->
         <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
@@ -29,21 +29,13 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
         <link rel="manifest" href="../favicon/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="../favi/ms-icon-144x144.png">
+        <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">   
-        <style>
-            /* RESPON */
-            @media (max-width: 800px){
-                section{
-                    font-size: 0.8em;
-                }              
-            }
-        </style>
 
         <script src="script.js"></script>
     </head>
     <body>
-        <div id="center">
+        <main>
             <header>
                 <h1><span>W</span>ypożyczalnia <span>L</span>uksusowych i <span>S</span>portowych <span>S</span>amochodów</h1>
                 <a href="../" class="home-link"><img class="wliss" src="../logo-removebg-preview.png" alt="logo"></a>
@@ -52,14 +44,14 @@
                 <h2>Oferta</h2>
                 <ul id="menu">
                     <li><a href="../" class="home-link">Strona Główna</a></li>
-                    <li><a href="../oferta.html">Oferta</a></li>
+                    <li><a href="../offer.html">Oferta</a></li>
                     <li><a href="../share.html">Udostępnienie samochodu</a></li>
-                    <li><a href="../kontakt.html">Formularz kontaktowy</a></li>
+                    <li><a href="../contact.html">Formularz kontaktowy</a></li>
                 </ul>
             </nav>
             <section>
                 <h3>Jaguar XF</h3>
-                <a href="zdjecia_aut/jaguar_xf.jpg" target="_blank"><img src="zdjecia_aut/jaguar_xf.jpg" alt="jaguar_xf"></a>
+                <a href="car_photos/jaguar_xf.jpg" target="_blank"><img src="car_photos/jaguar_xf.jpg" alt="jaguar_xf"></a>
                 <table>
                     <caption>Dane techniczne:</caption>
                     <tr><th>Marka</th><td>Jaguar</td></tr>
@@ -91,6 +83,6 @@
                     Ostatnia aktualizacja: Listopad 2024
                 </p>
             </footer>
-        </div>
+        </main>
     </body>
 </html>

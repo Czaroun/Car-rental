@@ -130,7 +130,7 @@ section p span {
     section {
         font-size: 1em;
     }
-    section > figure {
+    section figure {
         display: none;
     }
 }

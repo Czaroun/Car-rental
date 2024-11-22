@@ -1,4 +1,4 @@
-/* OGÓLNE */
+/* OGOLNE */
 html {
     width: 100%;
     height: 100%;
@@ -12,18 +12,15 @@ html {
     --highlight-color: purple;
 }
 
-/* + */
 body {
     font-family: Georgia, Cambria, Arial, serif;
     background-color: var(--body-bg-colro);
 }
 
-/* -ZAPASOWE-    background-color: ;#0027c2;
-                background-color: #fef1aa; */
-#center {
+
+main {
     margin: 0 auto;
     padding: 0;
-    z-index: -10;
     background-color: var(--main-bg-color);
     width: 90%;
     height: 100%;
@@ -31,16 +28,12 @@ body {
     box-sizing: border-box;
 }
 
-/* -ZAPASOWE- background-color: #ccc;*/
 /* HEADER */
 header {
     margin-bottom: 10%;
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
 }
 
-header > h1 {
+header h1 {
     font-family: DejaVu Sans, serif;
     font-size: 3em;
     font-weight: 600;
@@ -70,10 +63,11 @@ nav {
     text-align: center;
 }
 
-nav > h2 {
+nav h2 {
     font-size: 3em;
     color: var(--secondary-bg-color);
     font-weight: bolder;
+    margin-bottom: 20px;
 }
 
 #menu {
@@ -85,24 +79,26 @@ nav > h2 {
     /*width: 100%;*/
 }
 
-#menu > li {
+#menu li {
     /*float: left;*/
     width: 25%;
     /*width: auto;*/
 }
 
-#menu > li > a {
-    display: block;
+#menu li a {
+    display: flex;
+    justify-content: center; /* Wysrodkuj poziomo */
+    align-items: center; /* Wysrodkuj pionowo */
     text-decoration: none;
     text-align: center;
     background-color: #bebebe;
     color: var(--text-color);
     padding: 30px;
-    /*padding: 8.25%;*/
     font-size: 1.3em;
+    min-height: 6vh;
 }
 
-#menu > li:hover > a {
+#menu li:hover a {
     color: white;
     border-style: inset;
     background-color: #D79428;
