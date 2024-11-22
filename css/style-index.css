@@ -1,0 +1,136 @@
+/* SLIDER */
+section {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+section figure {
+    /*position: relative;*/
+    /*left: 0;*/
+    /*width: 500%;*/
+    /*animation: 30s slider infinite;*/
+    border-top: 3px solid #D79428;
+    border-bottom: 3px solid #D79428;
+    display: flex;
+    position: relative;
+    width: 500%;
+    /*width: calc(100% * 20); !* 10 zdjęć x 2 (oryginały + duplikaty) *!*/
+
+    /*transform: translateX(0);*/
+    margin: 0;
+    padding: 0;
+    left: 0;
+    animation: slider 30s linear infinite;
+}
+
+section figure img {
+    /*width: calc(100% / 10);*/
+    width: 192px;
+    /*width: calc(100% / 10 + 0.5%);*/
+    /*width: 100vw;*/
+    /*height: 9.8%;*/
+    /*width: 100%; !* Dopasowanie do szerokości kontenera *!*/
+    height: auto;
+    flex-shrink: 0; /* Utrzymanie proporcji obrazów */
+}
+
+section p {
+    margin: 3%;
+    font-size: 1.3em;
+    color: #96671C;
+    text-align: justify;
+}
+
+section p span {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+@keyframes slider {
+    /*5%  {left: 0}*/
+    /*10% {left: -50%}*/
+    /*15% {left: -50%}*/
+    /*20% {left: -100%}*/
+    /*25% {left: -100%}*/
+    /*30% {left: -150%}*/
+    /*35% {left: -150%}*/
+    /*40% {left: -200%}*/
+    /*45% {left: -200%}*/
+    /*50% {left: -250%}*/
+    /*55% {left: -250%}*/
+    /*60% {left: -300%}*/
+    /*65% {left: -300%}*/
+    /*70% {left: -350%}*/
+    /*75% {left: -350%}*/
+    /*80% {left: -400%}*/
+    /*90% {left: -400%}*/
+    /*100%{left: -400%}*/
+    /*from {*/
+    /*    left: 0;*/
+    /*}*/
+    /*to {*/
+    /*    left: -400%;*/
+    /*}*/
+
+    /*0% {*/
+    /*    left: 0;*/
+    /*}*/
+    /*90% {*/
+    /*    left: -400%; !* Normalny ruch *!*/
+    /*}*/
+    /*100% {*/
+    /*    left: 0; !* Reset *!*/
+    /*}*/
+
+
+
+
+    5%  {left: 0}
+    10%, 15% {left: -50%}
+    20%, 25% {left: -100%}
+    30%, 35% {left: -150%}
+    40%, 45% {left: -200%}
+    50%, 55% {left: -250%}
+    60%, 65% {left: -300%}
+    70%, 75% {left: -350%}
+    80%, 85% {left: -400%}
+    90%, 95%  {left: -400%}
+    100% {left: 0}
+
+    /*90% {left: -400%}*/
+    /*100%{left: -400%}*/
+    /*0% { transform: translateX(0); }*/
+    /*10% { transform: translateX(-100%); }*/
+    /*20% { transform: translateX(-200%); }*/
+    /*30% { transform: translateX(-300%); }*/
+    /*40% { transform: translateX(-400%); }*/
+    /*50% { transform: translateX(-500%); }*/
+    /*60% { transform: translateX(-600%); }*/
+    /*70% { transform: translateX(-700%); }*/
+    /*80% { transform: translateX(-800%); }*/
+    /*90% { transform: translateX(-900%); }*/
+    /*100% { transform: translateX(-1000%); }*/
+
+    /*5% { transform: translateX(0); }*/
+    /*10%, 15% { transform: translateX(-50%); }*/
+    /*20%, 25% { transform: translateX(-100%); }*/
+    /*30%, 35% { transform: translateX(-150%); }*/
+    /*40%, 45% { transform: translateX(-200%); }*/
+    /*50%, 55% { transform: translateX(-250%); }*/
+    /*60%, 65% { transform: translateX(-300%); }*/
+    /*70%, 75% { transform: translateX(-350%); }*/
+    /*80%, 90%, 100% { transform: translateX(-400%)}*/
+}
+
+
+
+/* RESPON */
+@media (max-width: 800px) {
+    section {
+        font-size: 1em;
+    }
+    section > figure {
+        display: none;
+    }
+}

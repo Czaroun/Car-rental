@@ -5,89 +5,101 @@
         <title>Strona Główna | WLiSS</title>
         <meta name="description" content="Strona internetowej firmy która wypożcza luksusowe i sportowe samochody, a także daje możliwość udostępnienia prywatnym osobom swoich prestiżowych samochodów">
         <meta name="keywords" content="wypożyczalnia, samochody, samochody luksusowe, samochody sportowe, samochody prestiżowe, luksusowe, sportowe, prestiżowe">
-        <meta name="viewport" content="width=device-width, initial scale=1.0, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial scale=1.0, maximum-scale=1.0">
         <meta name="author" content="Krystian Będuch">
         <meta name="generator" content="Brackets">
         <meta name="robots" content="all">
-        <link rel="stylesheet" href="reset.css"> <!-- reset css -->
-        <link rel="stylesheet" href="main.css"> <!-- odwołanie do głównego pliku css -->
-        <link rel="stylesheet" href=respon.css> <!-- odwołanie do pliku konfiguracyjnego style responsywne -->
-        <!-- favi dla różnego typu urządzeń -->
-        <link rel="apple-touch-icon" sizes="57x57" href="favi/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="favi/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="favi/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="favi/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="favi/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="favi/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="favi/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="favi/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="favi/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="favi/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
-        <link rel="manifest" href="favi/manifest.json">
+        <link rel="stylesheet" href="css/main.css"> <!-- glowne style -->
+        <link rel="stylesheet" href="css/style-index.css"> <!-- style indywidualne dla index -->
+<!--        <link rel="stylesheet" href="css/reset.css"> &lt;!&ndash; reset css &ndash;&gt;-->
+<!--        <link rel="stylesheet" href="css/style.css"> &lt;!&ndash; odwołanie do głównego pliku css &ndash;&gt;-->
+<!--        <link rel="stylesheet" href=css/respon.css> &lt;!&ndash; odwołanie do pliku konfiguracyjnego style responsywne &ndash;&gt;-->
+<!--        <link rel="stylesheet" href="css/style-index.css">-->
+        <!-- favicon dla różnego typu urządzeń -->
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="favi/ms-icon-144x144.png">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">    
         <style>
             /* SLIDER */
-            section{
-                overflow: hidden;
-                width: 80%;
-                margin: 0 auto;
-                padding: 0 auto;
-            }
-            section > figure{
-                position: relative;
-                left: 0%;
-                width: 500%;
-                animation: 30s slider infinite;
-                border: 3px solid #D79428;               
-            }
-            section > figure > img{
-                width: 9.8%;
-                height: 9.8%;                               
-            }
-            section > p{
-                margin: 3%;
-                font-size: 1.3em;
-                color: #96671C;
-                text-align: justify;
-            }
-            section > p > span{
-                font-weight: bold;
-                font-size: 1.25em;
-            }            
-            @keyframes slider{
-                5%  {left: 0%}
-                10% {left: -50%}
-                15% {left: -50%}
-                20% {left: -100%}
-                25% {left: -100%}
-                30% {left: -150%}
-                35% {left: -150%}
-                40% {left: -200%}
-                45% {left: -200%}
-                50% {left: -250%}
-                55% {left: -250%}
-                60% {left: -300%}
-                65% {left: -300%}
-                70% {left: -350%}
-                75% {left: -350%}
-                80% {left: -400%}
-                90% {left: -400%}
-                100%{left: -400%}
-            }
-            /* RESPON */
-            @media (max-width: 800px){
-                section{
-                    font-size: 1em;
-                }
-                section > figure{
-                    display: none;
-                }
-            }
+            /*section{*/
+            /*    overflow: hidden;*/
+            /*    width: 80%;*/
+            /*    margin: 0 auto;*/
+            /*    padding: 0 auto;*/
+            /*}*/
+            /*section > figure{*/
+            /*    position: relative;*/
+            /*    left: 0%;*/
+            /*    width: 500%;*/
+            /*    animation: 30s slider infinite;*/
+            /*    border: 3px solid #D79428;               */
+            /*}*/
+            /*section > figure > img{*/
+            /*    width: 9.8%;*/
+            /*    height: 9.8%;                               */
+            /*}*/
+            /*section > p{*/
+            /*    margin: 3%;*/
+            /*    font-size: 1.3em;*/
+            /*    color: #96671C;*/
+            /*    text-align: justify;*/
+            /*}*/
+            /*section > p > span{*/
+            /*    font-weight: bold;*/
+            /*    font-size: 1.25em;*/
+            /*}            */
+            /*@keyframes slider {*/
+            /*    !*5%  {left: 0%}*!*/
+            /*    !*10% {left: -50%}*!*/
+            /*    !*15% {left: -50%}*!*/
+            /*    !*20% {left: -100%}*!*/
+            /*    !*25% {left: -100%}*!*/
+            /*    !*30% {left: -150%}*!*/
+            /*    !*35% {left: -150%}*!*/
+            /*    !*40% {left: -200%}*!*/
+            /*    !*45% {left: -200%}*!*/
+            /*    !*50% {left: -250%}*!*/
+            /*    !*55% {left: -250%}*!*/
+            /*    !*60% {left: -300%}*!*/
+            /*    !*65% {left: -300%}*!*/
+            /*    !*70% {left: -350%}*!*/
+            /*    !*75% {left: -350%}*!*/
+            /*    !*80% {left: -400%}*!*/
+            /*    !*90% {left: -400%}*!*/
+            /*    !*100%{left: -400%}*!*/
+            /*    5% { transform: translateX(0); }*/
+            /*    10%, 15% { transform: translateX(-50%); }*/
+            /*    20%, 25% { transform: translateX(-100%); }*/
+            /*    30%, 35% { transform: translateX(-150%); }*/
+            /*    40%, 45% { transform: translateX(-200%); }*/
+            /*    50%, 55% { transform: translateX(-250%); }*/
+            /*    60%, 65% { transform: translateX(-300%); }*/
+            /*    70%, 75% { transform: translateX(-350%); }*/
+            /*    80%, 90%, 100% { transform: translateX(-400%)}*/
+            /*}*/
+            /*!* RESPON *!*/
+            /*@media (max-width: 800px){*/
+            /*    section{*/
+            /*        font-size: 1em;*/
+            /*    }*/
+            /*    section > figure{*/
+            /*        display: none;*/
+            /*    }*/
+            /*}*/
         </style>
 
         <script src="script.js"></script>
@@ -108,17 +120,28 @@
                 </ul>
             </nav>
             <section>
-                <figure>
-                    <img src="header_slider/acura-nsx.jpg" alt="acura_nsx">
-                    <img src="header_slider/audi-sq5-sportback.jpg" alt="audi_sq5">
-                    <img src="header_slider/bentley-continental-gt.jpg" alt="bentley_continental">
-                    <img src="header_slider/bmw-manhart-mhx5.jpg" alt="bmw_x5">
-                    <img src="header_slider/cadillac-ct5.jpg" alt="cadillac_ct5">
-                    <img src="header_slider/lamborghini-huracan-performante.jpg" alt="lamborghini_huracan">
-                    <img src="header_slider/lexus-ux-hybryda.jpg" alt="lexus_ux">
-                    <img src="header_slider/mercedes-amg-a45-s-brabus.jpg" alt="mercedes_amg_a45">
-                    <img src="header_slider/rolls-royce-wraith.jpg" alt="rolls_royce_wraith">
-                    <img src="header_slider/mercedes-benz-g-class.jpg" alt="mercedes_g_class">
+                <figure id="slider">
+<!--                    <img src="header_slider/acura-nsx.jpg" alt="acura_nsx">-->
+<!--                    <img src="header_slider/audi-sq5-sportback.jpg" alt="audi_sq5">-->
+<!--                    <img src="header_slider/bentley-continental-gt.jpg" alt="bentley_continental">-->
+<!--                    <img src="header_slider/bmw-manhart-mhx5.jpg" alt="bmw_x5">-->
+<!--                    <img src="header_slider/cadillac-ct5.jpg" alt="cadillac_ct5">-->
+<!--                    <img src="header_slider/lamborghini-huracan-performante.jpg" alt="lamborghini_huracan">-->
+<!--                    <img src="header_slider/lexus-ux-hybryda.jpg" alt="lexus_ux">-->
+<!--                    <img src="header_slider/mercedes-amg-a45-s-brabus.jpg" alt="mercedes_amg_a45">-->
+<!--                    <img src="header_slider/rolls-royce-wraith.jpg" alt="rolls_royce_wraith">-->
+<!--                    <img src="header_slider/mercedes-benz-g-class.jpg" alt="mercedes_g_class">-->
+
+<!--                    <img src="header_slider/acura-nsx.jpg" alt="acura_nsx">-->
+<!--                    <img src="header_slider/audi-sq5-sportback.jpg" alt="audi_sq5">-->
+<!--                    <img src="header_slider/bentley-continental-gt.jpg" alt="bentley_continental">-->
+<!--                    <img src="header_slider/bmw-manhart-mhx5.jpg" alt="bmw_x5">-->
+<!--                    <img src="header_slider/cadillac-ct5.jpg" alt="cadillac_ct5">-->
+<!--                    <img src="header_slider/lamborghini-huracan-performante.jpg" alt="lamborghini_huracan">-->
+<!--                    <img src="header_slider/lexus-ux-hybryda.jpg" alt="lexus_ux">-->
+<!--                    <img src="header_slider/mercedes-amg-a45-s-brabus.jpg" alt="mercedes_amg_a45">-->
+<!--                    <img src="header_slider/rolls-royce-wraith.jpg" alt="rolls_royce_wraith">-->
+<!--                    <img src="header_slider/mercedes-benz-g-class.jpg" alt="mercedes_g_class">-->
                 </figure>
                 <p>Firma <span>WLiSS</span> jest nową prosperującą firmą, która zajmuje się przede wszystkim wypożyczaniem samochodów. Samochody luksusowe cechujące się prestiżowym wnętrzem oraz wysokim stylem jazdy, a także samochody sportowe, których zaletą jest szybkość i przyspieszenie. Oferujemy prywatnym właścicielom udostępnienie swoich samochodów. Dzięki temu wyjątkowe samochody również pojawią się dla klientów. Nasza oferta nie jest zamknięta, stale będzie powiększana o nowe modele.</p>
             </section>

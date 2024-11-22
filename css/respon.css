@@ -1,37 +1,45 @@
-@media (max-width: 800px){
-    #center{
+@media (max-width: 800px) {
+    #center {
         max-width: 800px;
     }
-    header > h1{
+
+    header > h1 {
         font-size: 2em;
     }
-    #menu > li{
+
+    #menu > li {
         float: none;
         display: inline;
     }
-    #menu > li > a{
+
+    #menu > li > a {
         font-size: 1.1em;
         padding: 3%;
     }
-    nav > h2{
+
+    nav > h2 {
         font-size: 2em;
     }
-    section > a > h3 > img{
+
+    section > a > h3 > img {
         height: 50%;
         width: 50%;
     }
-    .wliss{
-    display: block;
-    position: static;
-    margin: 10% auto 0 auto;
+
+    .wliss {
+        display: block;
+        position: static;
+        margin: 10% auto 0 auto;
     }
 }
-@media (max-width: 400px){
-    section > a > img{
+
+@media (max-width: 400px) {
+    section > a > img {
         height: 50%;
         width: 50%;
     }
-    span{
+
+    span {
         font-size: 1.4em;
     }
 }

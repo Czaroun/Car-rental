@@ -4,19 +4,27 @@ html {
     height: 100%;
 }
 
+:root {
+    --body-bg-colro: #ffffd0;
+    --main-bg-color: #fffff0;
+    --secondary-bg-color: #d79428;
+    --text-color: #000;
+    --highlight-color: purple;
+}
+
 /* + */
 body {
-    font-family: Georgia, Cambria, Arial;
-    background-color: #ffffd0;
+    font-family: Georgia, Cambria, Arial, serif;
+    background-color: var(--body-bg-colro);
 }
 
 /* -ZAPASOWE-    background-color: ;#0027c2;
                 background-color: #fef1aa; */
 #center {
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
     z-index: -10;
-    background-color: #fffff0;
+    background-color: var(--main-bg-color);
     width: 90%;
     height: 100%;
     max-width: 1800px;
@@ -27,28 +35,22 @@ body {
 /* HEADER */
 header {
     margin-bottom: 10%;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
 }
 
 header > h1 {
-    font-family: DejaVu Sans;
+    font-family: DejaVu Sans, serif;
     font-size: 3em;
     font-weight: 600;
-    color: purple;
+    color: var(--highlight-color);
     background: -webkit-linear-gradient(#e200e2, #1e001e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
 }
 
-/* -INNE USTAWIENIA-
-            #logo > h1{          
-                font-family: Source Code Pro;
-                font-weight: bold;
-                font-size: 3em;                
-                text-align: center;
-                color: blueviolet;            
-                color: rgb(94,38,135);
-                background: -webkit-linear-gradient( rgb(93,38,135), black); */
 span {
     font-size: 1.3em;
     font-weight: bold;
@@ -70,20 +72,23 @@ nav {
 
 nav > h2 {
     font-size: 3em;
-    color: #D79428;
+    color: var(--secondary-bg-color);
     font-weight: bolder;
 }
 
 #menu {
-    margin: 0 auto;
-    padding: 0 auto;
+    /*margin: 0 auto;*/
+    /*padding: 0;*/
     list-style: none;
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /*width: 100%;*/
 }
 
 #menu > li {
-    float: left;
+    /*float: left;*/
     width: 25%;
+    /*width: auto;*/
 }
 
 #menu > li > a {
@@ -91,9 +96,9 @@ nav > h2 {
     text-decoration: none;
     text-align: center;
     background-color: #bebebe;
-    color: #000;
+    color: var(--text-color);
     padding: 30px;
-    padding: 8.25%;
+    /*padding: 8.25%;*/
     font-size: 1.3em;
 }
 
