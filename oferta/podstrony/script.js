@@ -6,10 +6,10 @@ const adjustLinks = () => {
     links.forEach(link => {
         if (isLocal) {
             // Jeśli lokalnie (plik file://), ustawiamy linki na index.html
-            link.href = "index.html";
+            link.href = "../../index.html";
         } else {
             // Jeśli na GitHub Pages (https://github.com/...), ustawiamy linki na /
-            link.href = "/";
+            link.href = "../../";
         }
     });
 };

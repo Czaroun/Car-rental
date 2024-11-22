@@ -1,3 +1,3 @@
 # CarRental
 Github page:
-https://czaroun.github.io/CarRental/
+https://krystianbeduch.github.io/car-rental/
